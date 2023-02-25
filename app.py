@@ -54,15 +54,14 @@ def post():
     #    data[i]= data[i].astype('object')
 
     # print(type(data["driver_age"]))
- 
-    data=np.ravel(data)
+    df2=pd.DataFrame()
 #Load the encoding object from the file using pickle
     with open("encoding.pkl", 'rb') as f:
          le = pickle.load(f)
     
-   
-         encoded_data = le.transform(data)
-         print(encoded_data)
+         for col in data.columns:
+                df2[col] = le.fit_transform(data[col])
+    print(df2)
     return render_template( 'index.html',data='data inserted successfully')
 if __name__=="__main__":
     app.run(debug=True,use_reloader=True)
