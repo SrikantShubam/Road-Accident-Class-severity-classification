@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <title>Document</title>
+  <link href="{{ url_for('static', filename='/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-7 mt-5 " style="background-color: black; margin-top: 0rem!important;" id="left">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <div class="card mb-4" >
+              <div class="card-body">
+               <h5>This data set is collected from Addis Ababa Sub-city police departments for master's research work. The data set has been prepared from manual records of road traffic accidents of the year 2017-20.</h5>
+             
+                <a href="#" class="card-link">Read More &rarr;</a>
+              </div>
+            </div>
+            <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+              class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" /> -->
+
+            <img src="https://images.pexels.com/photos/9271204/pexels-photo-9271204.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+              class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+
+            <img src="{{ url_for('static', filename='/img/1.png') }}"
+              class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+          </div>
+
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="{{ url_for('static', filename='/img/1.png') }}"
+              class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+            <video class="video-container"
+              src="{{ url_for('static', filename='/video/pexels-mati-mango-9208673.mp4') }} " autoplay controls muted
+              loop></video>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-5 mt-5">
+        <div class="mx-5 ml-5 text-center">
+          <h1>Road Traffic </h1><br>
+          <div class="dd">
+            <b >SEVERITY </b><br> <b style="color:#757d7e" >CLASSIFICATION</b>
+            
+          </div>
+
+         
+        </div>
+
+
+
+        <!-- <form method="post" action="/submit">
+                <select class="form-select" aria-label="Default select example" name="option">
+                    <option selected>Open this select menu</option>
+                    <option id="a" value="1">One</option>
+                    <option  id="a" value="2">Two</option>
+                    <option id="a" value="3">Three</option>
+                  </select>
+
+                  <input type="submit" value="Submit">
+                </form> -->
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="container-fluid" id="bottom">
+    <div class="text-center">
+      <h1 class="pt-5">Fill in the details to know accident Severity</h1>
+    </div>
+    <form method="post" action="/submit" class="mt-5">
+      <div class="row">
+        <div class="col-3">
+          <h6>Driver Age</h6>
+          <br>
+          <select class="form-select" aria-label="Default select example" name="Age">
+
+
+
+
+
+            <option selected>Choose a suitable option</option>
+            <option value="18-30"> 18-30</option>
+            <option value="31-50">31-50</option>
+            <option value="Under 18"> Under 18</option>
+            <option value="Over 51"> Over 51</option>
+            <option value="Unknown">Unknown</option>
+          </select>
+        </div>
+        <div class="col-3">
+          <h6>Driver Sex</h6>
+          <br>
+          <select class="form-select" aria-label="Default select example" name="sex">
+            <option selected>Open this select menu</option>
+            <option id="a" value="Male">Male</option>
+            <option id="a" value="Female">Female</option>
+            <option value="Unknown">Unknown</option>
+
+          </select>
+        </div>
+
+
+
+        <div class="col-3">
+          <h6>Vehicle Driver Relation</h6>
+          <br>
+          <select class="form-select" aria-label="Default select example" name="relation">
+            <option selected>Open this select menu</option>
+            <option id="a" value="Employee">Employee</option>
+            <option id="a" value="Owner">Owner</option>
+            <option id="a" value="Other">Other</option>
+            <option value="Unknown">Unknown</option>
+          </select>
+        </div>
+
+
+
+
+
+
+        <div class="col-3">
+          <h6>Eduaction Level</h6>
+          <br>
+          <select class="form-select" aria-label="Default select example" name="ed_lvl">
+            <option selected>Open this select menu</option>
+            <option id="a" value="Above high school">Above high school</option>
+            <option id="a" value="Junior high school">Junior high school</option>
+            <option id="a" value="Elementary school">Elementary school</option>
+            <option id="a" value="High school">High school</option>
+            <option value="Illiterate">Illiterate</option>
+            <option value="Writing & reading">writing and reading</option>
+            <option value="Unknown">Unknown</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mt-5">
+
+
+        <div class="col-md-3">
+          <h6> Driving Experience</h6>
+          <br>
+          <select class="form-select" aria-label="Default select example" name="dr_exp">
+            <option selected>Open this select menu</option>
+            <option id="a" value="1-2yr">1-2yr</option>
+            <option id="a" value="2-5yr">2-5yr</option>
+            <option id="a" value="5-10yr">5-10yr</option>
+            <option id="a" value="Above 10yr">Above 10yr</option>
+            <option value="Unknown">Unknown</option>
+            <option value="No License">No License</option>
+            <option value="Below 1 yr">Below 1 year</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <h6> Lanes
+          </h6>
+          <br>
+
+          <select class="form-select" aria-label="Default select example" name="lanes">
+            <option selected>Open this select menu</option>
+            <option id="a" value="One way">One way</option>
+            <option id="a" value="Double carriageway (median)">Double carriageway (median)</option>
+            <option id="a" value="Undivided Two way">Undivided Two way</option>
+            <option value="Two-way (divided with solid lines road marking)">Two-way (divided with solid lines road marking)</option>
+            <option id="a" value="other">other</option>
+            <option value="Two-way (divided with broken lines road marking)">Two-way (divided with broken lines road marking)</option>
+            <option value="Unknown">Unknown</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <h6> Junction Type
+          </h6>
+          <br>
+          <select class="form-select" aria-label="Default select example" name="junc_type">
+            <option selected>Open this select menu</option>
+            <option id="a" value="No junction">No junction</option>
+            <option id="a" value="Y Shape">Y Shape</option>
+            <option id="a" value="X Shape">X Shape</option>
+            <option id="a" value="Crossing">Crossing</option>
+            <option id="a" value="O Shape">O Shape</option>
+
+            <option id="a" value="Other">other</option>
+            <option value="Unknown">Unknown</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <h6> Surface Type
+          </h6>
+          <br>
+
+
+
+
+
+
+          <select class="form-select" aria-label="Default select example" name="road_type">
+            <option selected>Open this select menu</option>
+            <option id="a" value="Asphalt roads">Asphalt roads</option>
+            <option id="a" value="Earth roads">Earth roads</option>
+            <option id="a" value="Asphalt roads with some distress">Asphalt roads with some distress</option>
+            <option id="a" value="Gravel roads">Gravel roads</option>
+            <option value="Unknown">Unknown</option>
+
+          </select>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-3">
+          <h6> Light Condition
+          </h6>
+          <br>
+          <select class="form-select" aria-label="Default select example" name="light">
+            <option selected>Open this select menu</option>
+            <option id="a" value="Daylight">Daylight</option>
+            <option id="a" value="Darkness - lights lit">Darkness - lights lit</option>
+            <option id="a" value="Darkness - no lighting">Darkness - no lighting</option>
+            <option id="a" value="Darkness - lights unlit">Darkness - lights unlit</option>
+
+           
+          </select>
+        </div>
+        <div class="col-md-3">
+          <h6> Weather Condition</h6>
+          <br>
+          <select class="form-select" aria-label="Default select example" name="weather">
+            <option selected>Open this select menu</option>
+            <option id="a" value="Normal">Normal</option>
+            <option id="a" value="Raining">Raining</option>
+            <option id="a" value="Raining and Windy">Raining and Windy</option>
+            <option id="a" value="Cloudy">Cloudy</option>
+            <option id="a" value="Windy">Windy</option>
+            <option id="a" value="Snow">Snow</option>
+            <option id="a" value="Fog or mist">Fog or mist</option>
+            <option id="a" value="Other">other</option>
+            <option value="Unknown">Unknown</option>
+
+          </select>
+        </div>
+        <div class="col-md-3">
+          <h6> Collision Type</h6>
+          <br>
+          <select class="form-select" aria-label="Default select example" name="colli_type">
+            <option selected>Open this select menu</option>
+            <option id="a" value="Collision with roadside-parked vehicles">With roadside-parked vehicles </option>
+            <option id="a" value="Vehicle with vehicle collision">Vehicle with vehicle </option>
+            <option id="a" value="Collision with roadside objects">With roadside objects</option>
+            <option id="a" value="Collision with animals">Collision with animals</option>
+            <option id="a" value="Rollover">Rollover</option>
+            <option id="a" value="Collision with animals">Collision with animals</option>
+            <option id="a" value="Fall from vehicles">Fall from vehicles</option>
+            <option id="a" value="Collision with pedestrians">Collision with pedestrians</option>
+            <option id="a" value="With Train">With Train</option>
+            <option id="a" value="Other">other</option>
+            <option value="Unknown">Unknown</option>
+          </select>
+
+        </div>
+        <div class="col-md-3">
+          <h6> Vehicle Movement</h6>
+          <br>
+          <select class="form-select" aria-label="Default select example" name="veh_move">
+            <option selected>Open this select menu</option>
+            <option id="a" value="Going straight">Going straight
+            </option>
+            <option id="a" value="U-Turn">U-Turn</option>
+            <option id="a" value="Moving Backward">Moving Backward</option>
+            <option id="a" value="Turnover">Turnover</option>
+            <option id="a" value="Waiting to go">Waiting to go</option>
+            <option id="a" value="Getting off">Getting off</option>
+            <option id="a" value="Reversing">Reversing</option>
+            <option id="a" value="Parked">Parked</option>
+            <option id="a" value="Stopping">Stopping</option>
+            <option id="a" value="Overtaking">Overtaking</option>
+           
+            <option id="a" value="Entering a junction">Entering a junction</option>
+            <option id="a" value="Stopping">Stopping</option>
+            <option id="a" value="Other">Other</option>
+            <option value="Unknown">Unknown</option>
+
+          </select>
+
+        </div>
+      </div>
+      <div class="row mt-5 mx-5">
+        <div class="col-md-4 mx-5" >
+          <h6> Pedestrian Movement</h6>
+          <br>
+          <select class="form-select" aria-label="Default select example" name="ped_move">
+            <option selected>Open this select menu</option>
+            <option id="a" value="Not a Pedestrian">Not a Pedestrian
+            </option>
+            <option id="a" value="Crossing from driver's nearside">Crossing from driver's nearside</option>
+            <option id="a" value="Crossing from nearside - masked by parked or statioNot a Pedestrianry vehicle">
+              Crossing nearside parked or stationary vehicles
+            </option>
+            <option id="a" value="Crossing from offside - masked by  parked or statioNot a Pedestrianry vehicle">
+              Crossing offside parked or stationary vehicles
+            </option>
+            <option value="In carriageway, statioNot a Pedestrianry - not crossing  (standing or playing)"> not crossing  (standing or playing)</option>
+            <option value="Walking along in carriageway, back to traffic"> 'Walking along in carriageway, back to traffic</option>
+            <option value="Walking along in carriageway, facing traffic"> 'Walking along in carriageway, facing traffic</option>
+            <option value="In carriageway, statioNot a Pedestrianry - not crossing  (standing or playing) - masked by parked or statioNot a Pedestrianry vehicle"> Standing or playing in the road beside parked or stationary vehicle</option>
+
+          </select>
+        </div>
+        <div class="col-md-4 mx-5">
+
+          <h6> Accident Cause</h6>
+          <br>
+          <select class="form-select" aria-label="Default select example" name="acci_cause">
+            <option selected>Open this select menu</option>
+            <option id="a" value="Moving Backward">Moving Backward
+
+            </option>
+            <option id="a" value="Overtaking">Overtaking
+            </option>
+            <option id="a" value="Changing lane to the left">
+              Changing lane to the left
+
+            </option>
+            <option id="a" value="Changing lane to the right
+            ">
+              Changing lane to the right
+
+            </option>
+            <option id="a" value="Overloading">
+              Overloading</option>
+              <option id="a" value="Other">Other</option>
+              <option id="a" value="No priority to vehicle">No priority to vehicle</option>
+              <option id="a" value="No priority to pedestrian">No priority to pedestrian</option>
+              <option id="a" value="No distancing">No distancing</option>
+              <option id="a" value="Getting off the vehicle improperly">Getting off the vehicle improperly</option>
+              <option id="a" value="Improper parking">Improper parking</option>
+              <option id="a" value="Overspeed">Overspeed</option>
+              <option id="a" value="Driving carelessly">Driving carelessly</option>
+              <option id="a" value="Driving at high speed">Driving at high speed</option>
+              <option id="a" value="Driving to the left">Driving to the left</option>
+              <option id="a" value="Overturning">Overturning</option>
+              <option id="a" value="Turnover">Turnover</option>
+              <option id="a" value="Driving under the influence of drugs">Driving under the influence of drugs</option>
+              <option id="a" value="Drunk driving">Drunk driving</option>
+              <option value="Unknown">Unknown</option>
+          </select>
+
+        </div>
+      </div>
+      <input type="submit" value="Submit" class="btn btn-dark mt-4 mx-4">
+    </form>
+  </div>
+</body>
+
+</html>
