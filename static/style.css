@@ -5,9 +5,10 @@
     margin: 0!important;
     padding: 0;
     box-sizing: border-box;
+   
 }
 body{
-    background-color: #faebd7;
+    background-color: #DCD6B6;
 }
 
 
@@ -32,12 +33,15 @@ body{
 height: 55rem!important;
   }
 
-  h1,h6{
+  h1{
     font-family: 'Lobster', cursive;
 
   }
-  h2,h4,h5{
+  h2,h4,h5,h6{
     font-family: 'Poppins', sans-serif;
+  }
+  h6{
+    font-size: 1rem;
   }
   h5{
     line-height: 2.2rem;
@@ -82,13 +86,41 @@ border-radius: 13px;
       }
   
 
-      .dd{
-        /* font-size: 70px; */
-        font-family: 'Poppins';
-        margin-top: 10rem!important;
-        color: rgb(0, 0, 0);
-        font-size: 3rem;
-        transform: scale(1, 4);
-       line-height: 1rem;
+      /* .dd{
        
+        font-family: 'Poppins';
+        margin-top: 12rem!important;
+        color: rgb(255, 0, 0);
+        font-size: 7rem;
+      } */
+        /* transform: scale(3, 5); */
+       /* line-height: 7rem; */
+  /* font-size: 70px; */
+	
+
+      
+      .dd h1 {
+        font-size: 120px;
+        text-transform: uppercase;
+        font-family: 'Gambetta', serif;
+        letter-spacing: -3px;
+        transition: 700ms ease;
+        font-variation-settings: "wght" 311;
+        margin-bottom: 0.8rem;
+        color: PaleGoldenRod;
+        outline: none;
+        text-align: center;
       }
+      
+     .dd h1:hover {
+        font-variation-settings: "wght" 582; 
+        letter-spacing: 1px;
+      }
+      
+      .dis h1,h2{
+       font-size: 5rem;
+      }
+
+      /*drop*/
+
+      
