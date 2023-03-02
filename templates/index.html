@@ -6,8 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-  <title>Document</title>
+  <title> Classification:Road Traffic Accident Severity</title>
+  <link rel="icon" href="{{ url_for('static', filename='/road-accident-severity-logo.png') }} "type="image/icon type">
+  <meta name="description" content="Deploying our cutting-edge machine learning model for road traffic accident severity classification, our Flask website offers accurate and reliable predictions to help prevent and reduce road accidents. With user-friendly features and seamless integration, our platform provides easy access to our state-of-the-art model, making road safety more accessible than ever before.">
   <link href="{{ url_for('static', filename='/style.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -17,31 +20,34 @@
 
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <div class="card mb-4" >
+            <div class="card mb-4">
               <div class="card-body">
-               <h5>This data set is collected from Addis Ababa Sub-city police departments for master's research work. The data set has been prepared from manual records of road traffic accidents of the year 2017-20.</h5>
-             
+                <h5>This data set is collected from Addis Ababa Sub-city police departments for master's research work.
+                  The data set has been prepared from manual records of road traffic accidents of the year 2017-20.</h5>
+
                 <a href="#" class="card-link">Read More &rarr;</a>
               </div>
             </div>
             <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
               class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" /> -->
 
-            <img src="https://images.pexels.com/photos/9271204/pexels-photo-9271204.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            <img
+              src="https://images.pexels.com/photos/9271204/pexels-photo-9271204.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
           </div>
 
           <div class="col-lg-4 mb-4 mb-lg-0">
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-              class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+            <div style="width:100%;height:0;padding-bottom:178%;position:relative;"><iframe
+                src="https://giphy.com/embed/RkcnyOMkZkArtBA6zs" width="100%" height="100%" style="position:absolute"
+                frameBorder="0" class="giphy-embed rounded" allowFullScreen></iframe></div>
+         
 
-            <img src="{{ url_for('static', filename='/img/1.png') }}"
-              class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+                <div style="width:100%;height:0;padding-bottom:56%;position:relative;" class="mt-5 "><iframe src="https://giphy.com/embed/xT4uQoSjd631A0JOmc" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed rounded" allowFullScreen></iframe></div>
           </div>
 
           <div class="col-lg-4 mb-4 mb-lg-0">
-            <img src="{{ url_for('static', filename='/img/1.png') }}"
-              class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+            <img src="{{ url_for('static', filename='/img/1.png') }}" class="w-100 shadow-1-strong rounded mb-4"
+              alt="Waves at Sea" />
 
             <video class="video-container"
               src="{{ url_for('static', filename='/video/pexels-mati-mango-9208673.mp4') }} " autoplay controls muted
@@ -54,30 +60,25 @@
         <div class="mx-5 ml-5 text-center">
           <div class="dis">
             <h1>Road Traffic </h1><br>
-            <h2 >Severity</h2>
-              
-                 <h2>Classification</h2>
+            <h2>Severity</h2>
+
+            <h2>Classification</h2> 
           </div>
-        
-            
-          </div>
-               
+
         </div>
-
-
-
-        <!-- <form method="post" action="/submit">
-                <select class="form-select" aria-label="Default select example" name="option">
-                    <option selected>Open this select menu</option>
-                    <option id="a" value="1">One</option>
-                    <option  id="a" value="2">Two</option>
-                    <option id="a" value="3">Three</option>
-                  </select>
-
-                  <input type="submit" value="Submit">
-                </form> -->
+        <div class="d-flex" style="margin-top: 10rem!important;">
+         <a href="https://github.com/SrikantShubam/Road-Accident-Class-severity-classification" target="_blank"> <i class="fa-brands fa-github mx-5 fa-5x" ></i></a>
+          <h1 class="mt-4">Follow us on Github</h1>
+        </div>
+       
+      
       </div>
+
+
+
+ 
     </div>
+  </div>
 
 
 
@@ -179,9 +180,11 @@
             <option id="a" value="One way">One way</option>
             <option id="a" value="Double carriageway (median)">Double carriageway (median)</option>
             <option id="a" value="Undivided Two way">Undivided Two way</option>
-            <option value="Two-way (divided with solid lines road marking)">Two-way (divided with solid lines road marking)</option>
+            <option value="Two-way (divided with solid lines road marking)">Two-way (divided with solid lines road
+              marking)</option>
             <option id="a" value="other">other</option>
-            <option value="Two-way (divided with broken lines road marking)">Two-way (divided with broken lines road marking)</option>
+            <option value="Two-way (divided with broken lines road marking)">Two-way (divided with broken lines road
+              marking)</option>
             <option value="Unknown">Unknown</option>
           </select>
         </div>
@@ -234,7 +237,7 @@
             <option id="a" value="Darkness - no lighting">Darkness - no lighting</option>
             <option id="a" value="Darkness - lights unlit">Darkness - lights unlit</option>
 
-           
+
           </select>
         </div>
         <div class="col-md-3">
@@ -289,7 +292,7 @@
             <option id="a" value="Parked">Parked</option>
             <option id="a" value="Stopping">Stopping</option>
             <option id="a" value="Overtaking">Overtaking</option>
-           
+
             <option id="a" value="Entering a junction">Entering a junction</option>
             <option id="a" value="Stopping">Stopping</option>
             <option id="a" value="Other">Other</option>
@@ -300,7 +303,7 @@
         </div>
       </div>
       <div class="row mt-5 mx-5">
-        <div class="col-md-4 mx-5" >
+        <div class="col-md-4 mx-5">
           <h6> Pedestrian Movement</h6>
           <br>
           <select class="form-select" aria-label="Default select example" name="ped_move">
@@ -314,10 +317,15 @@
             <option id="a" value="Crossing from offside - masked by  parked or statioNot a Pedestrianry vehicle">
               Crossing offside parked or stationary vehicles
             </option>
-            <option value="In carriageway, statioNot a Pedestrianry - not crossing  (standing or playing)"> not crossing  (standing or playing)</option>
-            <option value="Walking along in carriageway, back to traffic"> 'Walking along in carriageway, back to traffic</option>
-            <option value="Walking along in carriageway, facing traffic"> 'Walking along in carriageway, facing traffic</option>
-            <option value="In carriageway, statioNot a Pedestrianry - not crossing  (standing or playing) - masked by parked or statioNot a Pedestrianry vehicle"> Standing or playing in the road beside parked or stationary vehicle</option>
+            <option value="In carriageway, statioNot a Pedestrianry - not crossing  (standing or playing)"> not crossing
+              (standing or playing)</option>
+            <option value="Walking along in carriageway, back to traffic"> 'Walking along in carriageway, back to
+              traffic</option>
+            <option value="Walking along in carriageway, facing traffic"> 'Walking along in carriageway, facing traffic
+            </option>
+            <option
+              value="In carriageway, statioNot a Pedestrianry - not crossing  (standing or playing) - masked by parked or statioNot a Pedestrianry vehicle">
+              Standing or playing in the road beside parked or stationary vehicle</option>
 
           </select>
         </div>
@@ -343,29 +351,32 @@
             </option>
             <option id="a" value="Overloading">
               Overloading</option>
-              <option id="a" value="Other">Other</option>
-              <option id="a" value="No priority to vehicle">No priority to vehicle</option>
-              <option id="a" value="No priority to pedestrian">No priority to pedestrian</option>
-              <option id="a" value="No distancing">No distancing</option>
-              <option id="a" value="Getting off the vehicle improperly">Getting off the vehicle improperly</option>
-              <option id="a" value="Improper parking">Improper parking</option>
-              <option id="a" value="Overspeed">Overspeed</option>
-              <option id="a" value="Driving carelessly">Driving carelessly</option>
-              <option id="a" value="Driving at high speed">Driving at high speed</option>
-              <option id="a" value="Driving to the left">Driving to the left</option>
-              <option id="a" value="Overturning">Overturning</option>
-              <option id="a" value="Turnover">Turnover</option>
-              <option id="a" value="Driving under the influence of drugs">Driving under the influence of drugs</option>
-              <option id="a" value="Drunk driving">Drunk driving</option>
-              <option value="Unknown">Unknown</option>
+            <option id="a" value="Other">Other</option>
+            <option id="a" value="No priority to vehicle">No priority to vehicle</option>
+            <option id="a" value="No priority to pedestrian">No priority to pedestrian</option>
+            <option id="a" value="No distancing">No distancing</option>
+            <option id="a" value="Getting off the vehicle improperly">Getting off the vehicle improperly</option>
+            <option id="a" value="Improper parking">Improper parking</option>
+            <option id="a" value="Overspeed">Overspeed</option>
+            <option id="a" value="Driving carelessly">Driving carelessly</option>
+            <option id="a" value="Driving at high speed">Driving at high speed</option>
+            <option id="a" value="Driving to the left">Driving to the left</option>
+            <option id="a" value="Overturning">Overturning</option>
+            <option id="a" value="Turnover">Turnover</option>
+            <option id="a" value="Driving under the influence of drugs">Driving under the influence of drugs</option>
+            <option id="a" value="Drunk driving">Drunk driving</option>
+            <option value="Unknown">Unknown</option>
           </select>
 
         </div>
       </div>
-      <input type="submit" value="Submit" class="btn btn-dark mt-4 mx-4">
+      <div class="text-center">
+        <input type="submit" value="Submit" class="btn btn-dark btn-lg px-5 mt-4 mx-4 ">
+      </div>
+    
     </form>
- 
- 
+
+
   </div>
 </body>
 

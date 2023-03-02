@@ -52,13 +52,13 @@ def post():
 
     dct = {k:[v] for k,v in df.items()} # WORKAROUND
     data = pd.DataFrame(dct)
-    print("the dataframe is----->", data)
+    # print("the dataframe is----->", data)
     # for i in data.columns:
     #    data[i]= data[i].astype('object')
 
     # print(type(data["driver_age"]))
  
-    data.to_csv("original.csv")
+    # data.to_csv("original.csv")
 # Load the encoding object from the file using pickle
     
 
@@ -183,15 +183,15 @@ def post():
             # print(i)
             if item in dict1[i]:
                 data[i][0] = dict1[i][item]
-    print(data.head)
-    data.to_csv("data.csv")
+    # print(data.head)
+    # data.to_csv("data.csv")
     with gzip.open('model.pkl.gz', 'rb') as f:
          compressed_data = f.read()
          model = pickle.loads(compressed_data)
          pred=model.predict(data)
-         print("Shree ram jaanki baithe hain mere seene mai")
-         print(pred)
-    return render_template('predict.html', data=pred)
+        #  print("Shree ram jaanki baithe hain mere seene mai")
+        #  print(pred)
+    return render_template('predict.html', data=pred,cause=accident_cause,road_type=surface_type)
 
 
 if __name__ == "__main__":
