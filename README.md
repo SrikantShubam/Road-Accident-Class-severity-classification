@@ -12,7 +12,7 @@ accident by analyzing it using different machine learning classification algorit
 
 
 
-##🧭 **Problem Statement:** The target feature is **Accident\_severity** which is a multi-class variable.
+## 🧭 **Problem Statement:** The target feature is **Accident\_severity** which is a multi-class variable.
  
 ## 📈  Deployment
  You can find a live deployment of the model on pythonanywhere at this link: [http://roadseverity.pythonanywhere.com/](http://roadseverity.pythonanywhere.com/)
@@ -26,9 +26,9 @@ The project consists of several Jupyter notebooks that take the dataset through 
 The main objective of this project is to predict the severity of road accidents accurately. The severity of accidents is classified into three categories: fatal, serious, and slight. The project uses various metrics such as accuracy, precision, recall, and F1-score to evaluate the models' performance.
 
 ## 📚 Resources
- * [https://archive.ics.uci.edu/ml/datasets/road+accidents+severity+dataset](UCI Machine Learning Repository)
- * [https://scikit-learn.org/stable/index.html](scikit-learn documentation)
- * [https://matplotlib.org/stable/users/index.html](matplotlib documentation)
+ * [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/road+accidents+severity+dataset)
+ * [scikit-learn documentation](https://scikit-learn.org/stable/index.html)
+ * [matplotlib documentation](https://matplotlib.org/stable/users/index.html)
 
 ## 📝 License
 
