@@ -1,5 +1,5 @@
 
-# 🚦 *Project : Road Traffic Severity Classification*
+# 🚦 *Project : Road-Traffic Severity Classification*
 ## Welcome to the Road Accident Severity Classification project! This is a machine learning project that aims to classify the severity of road accidents based on various features. The project is implemented in Python, using various libraries such as pandas, scikit-learn, and matplotlib.
 
 
