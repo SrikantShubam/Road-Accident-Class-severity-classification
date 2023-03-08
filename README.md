@@ -3,7 +3,8 @@
 ## Welcome to the Road Accident Severity Classification project! This is a machine learning project that aims to classify the severity of road accidents based on various features. The project is implemented in Python, using various libraries such as pandas, scikit-learn, and matplotlib.
 
 
-🧾**Description:** This data set is collected from Addis Ababa Sub-city police departments for master's research 
+## 🧾**Description:**
+This data set is collected from Addis Ababa Sub-city police departments for master's research 
 work. The data set has been prepared from manual records of road traffic accidents of the year 2017-20. 
 All the sensitive information has been excluded during data encoding and finally it has 32 features and 12316 instances of the accident. 
 Then it is preprocessed and for identification of major causes of the 
@@ -11,7 +12,7 @@ accident by analyzing it using different machine learning classification algorit
 
 
 
-🧭 **Problem Statement:** The target feature is **Accident\_severity** which is a multi-class variable.
+##🧭 **Problem Statement:** The target feature is **Accident\_severity** which is a multi-class variable.
  
 ## 📈  Deployment
  You can find a live deployment of the model on pythonanywhere at this link: [http://roadseverity.pythonanywhere.com/](http://roadseverity.pythonanywhere.com/)
