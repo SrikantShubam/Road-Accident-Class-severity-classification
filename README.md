@@ -14,7 +14,7 @@ accident by analyzing it using different machine learning classification algorit
 🧭 **Problem Statement:** The target feature is **Accident\_severity** which is a multi-class variable.
  
 ## 📈  Deployment
- You can find a live deployment of the model on Heroku at this link: [http://roadseverity.pythonanywhere.com/](http://roadseverity.pythonanywhere.com/)
+ You can find a live deployment of the model on pythonanywhere at this link: [http://roadseverity.pythonanywhere.com/](http://roadseverity.pythonanywhere.com/)
  
 ##  🛠️	Project Structure
 
