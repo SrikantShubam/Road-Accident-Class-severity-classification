@@ -1,4 +1,4 @@
-# Road-Accident-Class-Severity-classification
+# <h1>Road-Accident-Class-Severity-classification</h1>
 # 🚦 Project : Road Traffic Severity Classification
 
 🧾**Description:** This data set is collected from Addis Ababa Sub-city police departments for master's research 
